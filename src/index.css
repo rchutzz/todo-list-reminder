@@ -15,9 +15,14 @@ input {
 }
 
 .reminder-form {
-  padding: 5px;
+  padding: 5;
 }
 
-.list-group-item {
-  margin: 5px 0px;
+.list-item {
+  display: inline-block;
+}
+
+.delete-button {
+  float: right;
+  padding-left: 5px;
 }
