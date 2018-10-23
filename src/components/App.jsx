@@ -37,7 +37,7 @@ class App extends Component {
         <div className="title">
           Todo List Reminder
         </div>
-        <div className="form-inline">
+        <div className="form-inline reminder-form">
           <div className="form-group">
             <input
               className="form-control"
