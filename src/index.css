@@ -1,3 +1,9 @@
+body {
+  background-image: url('https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8b5d177ad38580e039c7f403c0554ea6&auto=format&fit=crop&w=1934&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .App {
   display: flex;
   align-items:  center;
@@ -29,4 +35,18 @@ input {
 
 .btn {
   margin-right: 5px;
+}
+
+.reminder-tasks {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  margin-top: 10px;
+}
+
+li {
+  width: 100%;
+  margin: 5px 0px;
 }

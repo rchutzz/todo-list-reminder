@@ -25,22 +25,24 @@ class App extends Component {
   renderReminders() {
     const { reminders } = this.props;
     return (
-      <ul className="col-sm-4 list-group">
+      <ul className="list-group">
         {
           reminders.map(reminder => {
             return (
-              <li className="list-group-item reminder-items"  key={reminder.id}>
-                <div className="list-item">
-                  <div>{reminder.text}</div>
-                  <div><em>{moment(new Date(reminder.dueDate)).fromNow()}</em></div>
-                </div>
-                <div 
-                  className="list-item delete-button"
-                  onClick={() => this.deleteReminder(reminder.id)}
-                >
-                   &#x2715;
-                </div>
-              </li>
+              <div className="reminder-tasks">
+                <li className="list-group-item reminder-items"  key={reminder.id}>
+                  <div className="list-item">
+                    <div>{reminder.text}</div>
+                    <div><em>{moment(new Date(reminder.dueDate)).fromNow()}</em></div>
+                  </div>
+                  <div 
+                    className="list-item delete-button"
+                    onClick={() => this.deleteReminder(reminder.id)}
+                  >
+                    &#x2715;
+                  </div>
+                </li>
+              </div>
             )
           })
         }
@@ -74,13 +76,13 @@ class App extends Component {
           >
             Add Reminder
           </button>
-          { this.renderReminders() }
           <div
             className="btn btn-danger"
             onClick={() => this.props.clearReminders()}
           >
             Clear reminders
           </div>
+          { this.renderReminders() }
         </div>
       </div>
     )
