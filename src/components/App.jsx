@@ -14,6 +14,10 @@ class App extends Component {
     this.props.addReminder(this.state.text);
   }
 
+  deleteReminder(id) {
+    this.props.deleteReminder(id);
+  }
+
   renderReminders() {
     const { reminders } = this.props;
     return (
@@ -23,8 +27,11 @@ class App extends Component {
             return (
               <li className="list-group-item reminder-items"  key={reminder.id}>
                 <div className="list-item">{reminder.text}</div>
-                <div className="list-item delete-button">
-                  &#x2715;
+                <div 
+                  className="list-item delete-button"
+                  onClick={() => this.deleteReminder(reminder.id)}
+                >
+                   &#x2715;
                 </div>
               </li>
             )
