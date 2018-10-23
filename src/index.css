@@ -1,7 +1,63 @@
+
 body {
-  background-image: url('https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8b5d177ad38580e039c7f403c0554ea6&auto=format&fit=crop&w=1934&q=80');
+  background: #1d1d1d;
+  background-image: url('https://images.unsplash.com/photo-1506606401543-2e73709cebb4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c503710f47a3f687d8711b6202861028&auto=format&fit=crop&w=1050&q=80');
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0;
+  background-color: #5774b8;
+}
+
+.sandbox-correct-pronounciation {
+  padding: 3em 0 3em 0;
+}
+
+.heading-correct-pronounciation {
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  color: #fff;
+  font-family: 'Cardo', serif;
+  font-size: 1.5em;
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  line-height: 1em;
+}
+
+var {
+  font-family: 'EB Garamond', serif;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: block;
+  font-style: normal;
+  padding-top: 0.1em;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+}
+
+var::before,
+var::after {
+  content: "§";
+  display: inline-block;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  opacity: 0.2;
+  margin: 0 0.6em;
+  font-size: 0.5em;
+}
+
+.bottom {
+  font-size: 1.5em;
+  letter-spacing: 0.07em;
+  font-size: 1em;
+  display: block;
 }
 
 .App {
@@ -12,8 +68,7 @@ body {
 }
 
 .title {
-  text-align: center;
-  font-size: 26px;
+  font-size: 30px;
 }
 
 input {

@@ -53,8 +53,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="title">
-          Todo List Reminder
+        <div class="sandbox sandbox-correct-pronounciation">
+          <h1 class="heading heading-correct-pronounciation">
+            <var>Todo List Reminder</var>
+          </h1>
         </div>
         <div className="form-inline reminder-form">
           <div className="form-group">
