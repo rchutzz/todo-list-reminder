@@ -11,6 +11,6 @@ This is a todo-list reminder app built with React, Redux, and React Bootstrap.  
 # Install dependencies
 npm install
 
-# launches express server and serves app at http://localhost:5000/
+# launches app at http://localhost:3000/
 npm run start
 ```
