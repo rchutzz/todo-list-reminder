@@ -26,3 +26,7 @@ input {
   float: right;
   padding-left: 5px;
 }
+
+.btn {
+  margin-right: 5px;
+}
