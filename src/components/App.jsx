@@ -94,5 +94,4 @@ function mapStateToProps(state) {
     reminders: state
   }
 }
-
 export default connect(mapStateToProps, { addReminder, deleteReminder, clearReminders })(App);
