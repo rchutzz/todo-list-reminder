@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addReminder, deleteReminder, clearReminders } from '../actions'
 import moment from 'moment';
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -20,7 +19,7 @@ class App extends Component {
   deleteReminder(id) {
     this.props.deleteReminder(id);
   }
-  
+
   renderReminders() {
     const { reminders } = this.props;
     return (
