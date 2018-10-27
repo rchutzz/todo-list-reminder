@@ -20,7 +20,6 @@ class App extends Component {
   deleteReminder(id) {
     this.props.deleteReminder(id);
   }
-
   
   renderReminders() {
     const { reminders } = this.props;
